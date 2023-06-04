@@ -9,8 +9,9 @@
     &::before {
       content: "";
       position: absolute;
-      top: 0px;
+      top: 50%;
       left: 0px;
+      transform: translate(0%, -50%);
       width: 21px;
       height: 21px;
       background-image: url("./../img/header/map.svg");
@@ -25,5 +26,9 @@
 
   &--map::before {
     background-image: url("./../img/header/map.svg");
+  }
+
+  @include tablet-small{
+    font-size: 16px;
   }
 }

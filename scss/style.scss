@@ -1,10 +1,12 @@
 @import 'reset';
 @import 'vars';
+@import 'mixins';
 @import 'base';
 
 
 @import 'blocks/header';
 @import 'blocks/nav';
+@import 'blocks/nav-icon';
 @import 'blocks/info';
 @import 'blocks/benefits';
 @import 'blocks/appartments';

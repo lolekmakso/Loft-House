@@ -12,15 +12,33 @@
       #242b33 92.19%
     ),
     url("./../img/header/header-bg.jpg");
+
+  @include tablet {
+    min-height: unset;
+    row-gap: 50px;
+  }
 }
 
-.header__top-row{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.header__top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.header__title{
+.header__nav {
+  @include tablet {
+    display: none;
+  }
+}
+
+.header__nav-btn {
+  display: none;
+  @include tablet {
+    display: block;
+  }
+}
+
+.header__title {
   position: relative;
   padding-bottom: 121px;
   text-align: center;
@@ -28,21 +46,33 @@
   font-family: $font-accent;
   color: $accent;
   font-weight: 700;
+
+  @include tablet{
+    font-size: 36px;
+    padding-bottom: 100px;
+  }
 }
 
-.header__title-icon{
+.header__title-icon {
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 0%);
 }
 
-.header__footer{
+.header__footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
+
+  @include tablet-small{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
 }
 
-.text-right{
+.text-right {
   text-align: right;
 }
