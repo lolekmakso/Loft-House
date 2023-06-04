@@ -51,6 +51,8 @@ a:hover { color: #d4c17f; }
 
 .title-2 { font-family: "Playfair Display", serif; font-weight: 700; font-size: 36px; line-height: 48px; color: #d4c17f; }
 
+.link-bold { color: #d4c17f; font-weight: bold; }
+
 .header { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding-top: 30px; padding-bottom: 74px; min-height: 840px; background: -webkit-gradient(linear, left top, left bottom, color-stop(11.98%, #242b33), color-stop(51.04%, rgba(45, 52, 60, 0.38)), color-stop(92.19%, #242b33)), url("./../img/header/header-bg.jpg"); background: linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%), url("./../img/header/header-bg.jpg"); }
 
 .header__top-row { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
@@ -63,7 +65,7 @@ a:hover { color: #d4c17f; }
 
 .text-right { text-align: right; }
 
-.nav { font-size: 14px; }
+.nav { font-size: 14px; letter-spacing: 0.05em; }
 
 .nav__list { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-column-gap: 40px; column-gap: 40px; }
 
@@ -142,3 +144,15 @@ a:hover { color: #d4c17f; }
 .feedback__title { margin-bottom: 38px; }
 
 .feedback__form { display: grid; -webkit-box-align: center; -ms-flex-align: center; align-items: center; grid-template-columns: repeat(4, 1fr); gap: 30px; }
+
+.footer { background-color: #2d343c; padding-top: 72px; padding-bottom: 51px; font-size: 14px; letter-spacing: 0.05rem; }
+
+.footer__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; }
+
+.footer__logo { margin-top: -12px; }
+
+.footer__nav-list { display: grid; gap: 15px; }
+
+.footer__address { display: grid; gap: 20px; }
+
+.footer__socials { display: -webkit-box; display: -ms-flexbox; display: flex; gap: 22px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
