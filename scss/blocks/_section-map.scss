@@ -14,10 +14,18 @@
     font-size: 400px;
     font-family: $font-accent;
   }
+
+  @include tablet {
+    padding: 90px 0;
+  }
 }
 
 .section-map__title {
   margin-bottom: 88px;
+
+  @include tablet {
+    margin-bottom: 44px;
+  }
 }
 
 .section-map__map {

@@ -8,6 +8,10 @@
     ),
     linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)),
     url(./../img/cta/cta-bg.jpg), #c4c4c4;
+
+  @include tablet {
+    padding: 60px 0;
+  }
 }
 
 .cta__title {
@@ -18,6 +22,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
+
+  @include tablet {
+    grid-template-columns: 1fr;
+  }
 }
 
 .cta__text {
@@ -26,11 +34,19 @@
   p + p {
     margin-top: 1em;
   }
+
+  @include tablet {
+    font-size: 14px;
+  }
 }
 
 .cta__form {
-    display: grid;
-    align-items: center;
-    gap: 35px 30px;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  align-items: center;
+  gap: 35px 30px;
+  grid-template-columns: 1fr 1fr;
+
+  @include tablet {
+    grid-template-columns: 1fr;
+  }
 }

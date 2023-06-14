@@ -1,16 +1,26 @@
 .feedback {
   padding-bottom: 180px;
+
+  @include tablet {
+    padding-bottom: 90px;
+  }
 }
 
 .feedback__title {
   margin-bottom: 38px;
+
+  @include tablet {
+    margin-bottom: 20px;
+  }
 }
 
 .feedback__form {
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+
+  @include tablet {
+    grid-template-columns: 1fr;
+  }
 }
-
-
