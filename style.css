@@ -204,8 +204,10 @@ a:hover { color: #d4c17f; }
 @media (max-width: 959px) { .feedback__form { grid-template-columns: 1fr; } }
 
 .footer { background-color: #2d343c; padding-top: 72px; padding-bottom: 51px; font-size: 14px; letter-spacing: 0.05rem; }
+@media (max-width: 959px) { .footer { padding: 36px 25px; } }
 
 .footer__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; }
+@media (max-width: 959px) { .footer__grid { grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); } }
 
 .footer__logo { margin-top: -12px; }
 
